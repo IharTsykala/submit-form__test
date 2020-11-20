@@ -80,6 +80,7 @@ const createStringUrl = () => {
 
   const url = new URL(stringUrl, "https://ihartsykala.github.io/")
   console.log(url.toString())
+  console.log("hi")
 
   history.pushState(null, null, url.toString())
 }
