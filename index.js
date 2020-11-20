@@ -72,13 +72,13 @@ const createStringUrl = () => {
       ? submitObject.Department.join("|")
       : ""
 
-  stringUrl = `index.html?FName=${submitObject.FName || ""}&LName=${
+  stringUrl = `submit-form__test?FName=${submitObject.FName || ""}&LName=${
     submitObject.LName || ""
   }&Email=${submitObject.Email || ""}&Phone=${submitObject.phone || ""}&Sex=${
     submitObject.Sex || ""
   }&Skills=${stringSkills}&Department=${stringDepartment}`
 
-  const url = new URL(stringUrl, "http://127.0.0.1:5500/")
+  const url = new URL(stringUrl, "https://ihartsykala.github.io/")
 
   history.pushState(null, null, url.toString())
 }
