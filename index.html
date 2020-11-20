@@ -77,11 +77,11 @@
         </label>
       </fieldset>
 
-      <fieldset>
+      <fieldset id="skills">
         <label>
           <b>Skills</b>
         </label>
-        <label for="Female">
+        <label for="HTML">
           HTML
           <input
             class="main__form__participant-data__input-name"
@@ -89,9 +89,9 @@
             name="HTML"
             id="HTML"
           />
-        </label>
-        CSS
-        <label>
+        </label>       
+        <label for="CSS">
+          CSS
           <input
             class="main__form__participant-data__input-name"
             type="checkbox"
@@ -99,7 +99,7 @@
             id="CSS"
           />
         </label>
-        <label>
+        <label for="JavaScript">
           JavaScript
           <input
             class="main__form__participant-data__input-name"
@@ -108,7 +108,7 @@
             id="JavaScript"
           />
         </label>
-        <label>
+        <label for="AJAX">
           AJAX
           <input
             class="main__form__participant-data__input-name"
@@ -119,22 +119,11 @@
         </label>
       </fieldset>
 
-      <!-- <fieldset>
-        <label for="FName"></label>
-        <input
-          class="main__form__participant-data__input-name"
-          type="text"
-          name="FName"
-          id="FName"
-          placeholder="Вас зовут"
-        />
-      </fieldset> -->
-
       <fieldset>
         <label for="Department">
           <b>Department</b>
         </label>
-        <select multiple>
+        <select multiple id="position">
           <option value="FrontEnd">Front End</option>
           <option value="Sitecore">Sitecore</option>
           <option value="SalesForce">SalesForce</option>
@@ -143,8 +132,9 @@
       </fieldset>
 
       <fieldset>
-        <button>submit</button>
+        <button id="submitForm">submit</button>
       </fieldset>
     </form>
+    <script src="./index.js" defer async></script>
   </body>
 </html>
