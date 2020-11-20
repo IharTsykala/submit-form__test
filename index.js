@@ -79,6 +79,7 @@ const createStringUrl = () => {
   }&Skills=${stringSkills}&Department=${stringDepartment}`
 
   const url = new URL(stringUrl, "https://ihartsykala.github.io/")
+  console.log(url.toString())
 
   history.pushState(null, null, url.toString())
 }
