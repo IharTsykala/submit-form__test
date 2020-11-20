@@ -72,7 +72,7 @@ const createStringUrl = () => {
       ? submitObject.Department.join("|")
       : ""
 
-  stringUrl = `submit-form__test?FName=${submitObject.FName || ""}&LName=${
+  stringUrl = `submit-form__test/?FName=${submitObject.FName || ""}&LName=${
     submitObject.LName || ""
   }&Email=${submitObject.Email || ""}&Phone=${submitObject.phone || ""}&Sex=${
     submitObject.Sex || ""
