@@ -24,8 +24,6 @@ let submitObject = {
 
 let stringUrl = ""
 
-const arrayInputsStrings = [firstName, lastName, eMail, phone]
-
 // first task
 
 const createArraySkills = () => {
@@ -91,18 +89,17 @@ button.addEventListener("click", (e) => {
 
 // third task
 
-const fillObjectFields = () => { 
+const fillObjectFields = () => {
   const params = new URLSearchParams(window.location.search)
   for (const param of params) {
-    console.log(param)
     submitObject[param[0]] = param[1]
   }
-  
+
   firstName.value = submitObject.FName || ""
   lastName.value = submitObject.LName || ""
   eMail.value = submitObject.Email || ""
   phone.value = submitObject.value || ""
-  
+
   if (submitObject.Sex === "Female") female.checked = true
   if (submitObject.Sex === "Male") male.checked = true
   submitObject.Skills.split("|")
@@ -116,7 +113,7 @@ const fillObjectFields = () => {
 
   let arrayCurrentDepartaments = Array.from(position.children).filter(
     (item) => submitObject.Department.indexOf(item.value) !== -1
-  )  
+  )
   arrayCurrentDepartaments = arrayCurrentDepartaments.map(
     (item) => (item.selected = true)
   )
