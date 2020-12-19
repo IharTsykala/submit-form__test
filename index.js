@@ -55,7 +55,7 @@ const createSubmitObject = () => {
 
   for (const key in submitObject) {
     if (!submitObject[key]) delete submitObject[key]
-  }
+  }0
 
   console.log(JSON.stringify(submitObject))
 }
